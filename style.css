@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    width: 200px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+}
+.container p{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.container input{
+    width: 150px;
+    height: 30px; 
+    border: 1px solid rgb(255, 72, 0);
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+}
+.container button{
+    width: 90px;
+    height: 30px;
+    background: black;
+    color: rgb(252, 253, 250);
+    outline: 100px;
+    border-radius: 10px;
+    box-shadow: 20px black;
+    cursor: pointer;
+    margin: 30px 5;
+    font-weight: 400;
+}
+#imageBox{
+    width: 100px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-hight 1s ;
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgBox.shoe-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid blueviolet;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
